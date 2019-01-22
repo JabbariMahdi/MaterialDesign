@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tab_search"
+        android:icon="@drawable/ic_search_24dp"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/ic_home_24dp"
+        android:title="@string/home"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/tab_setting"
+        android:icon="@drawable/ic_settings_24dp"
+        android:title="@string/setting"
+        app:showAsAction="never"/>
+
+</menu>

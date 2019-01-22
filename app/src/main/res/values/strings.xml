@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+
+    <string name="Bottom_app_bar_text">FloatingActionButton Alignment Modes The FloatingActionButton can be aligned either to the center (FAB_ALIGNMENT_MODE_CENTER) or to the end (FAB_ALIGNMENT_MODE_END) by calling setFabAlignmentMode(int). The default animation will automatically be run. This can be coordinated with a Fragment transition to allow for a smooth animation from a primary screen to a secondary screen. FloatingActionButton Attributes The placement of the FloatingActionButton can be controlled by fabAlignmentMode, fabCradleMargin, fabCradleRoundedCornerRadius, and fabCradleVerticalOffset. The starting alignment mode (fabAlignmentMode) can be set to either center or end. Changing the fabCradleMargin will increase or decrease the distance between the FloatingActionButton and the BottomAppBar. The fabCradleRoundedCornerRadius specifies the roundness of the corner around the cutout. The fabCradleVerticalOffset specifies the vertical offset between the FloatingActionButton and the BottomAppBar. If fabCradleVerticalOffset is 0, the center of the FloatingActionButton will be aligned with the top of the BottomAppBar. Hide on scroll The BottomAppBar can be set to hide on scroll with the hideOnScroll attribute. To enable this behavior, you should ensure that the scrolling content is in a NestedScrollView. There\'s no need to wrap the BottomAppBar in an AppBarLayout or use any of the scroll flags associated with AppBarLayout such as app:layout_scrollFlags.FloatingActionButton Alignment Modes The FloatingActionButton can be aligned either to the center (FAB_ALIGNMENT_MODE_CENTER) or to the end (FAB_ALIGNMENT_MODE_END) by calling setFabAlignmentMode(int). The default animation will automatically be run. This can be coordinated with a Fragment transition to allow for a smooth animation from a primary screen to a secondary screen. FloatingActionButton Attributes The placement of the FloatingActionButton can be controlled by fabAlignment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="floating_action_buttons">Floating Action Buttons</string>
+    <string name="material_button">Material Button</string>
+    <string name="elevated_button">elevated button</string>
+    <string name="unelevated_button">unelevated button</string>
+    <string name="text_button">Text button</string>
+    <string name="text_icon_button">Text Icon button</string>
+    <string name="chips">Chips</string>
+    <string name="bottom_app_bars">Bottom App Bars</string>
+    <string name="material_card">Material Card</string>
+    <string name="demo_card_text">demo card text</string>
+    <string name="bottom_sheet_peek">bottom sheet peek</string>
+    <string name="bottom_sheet_content">bottom sheet content</string>
+    <string name="open_modal_bottom_sheet">open Modal Bottom Sheet</string>
+    <string name="open_bottom_sheet">open Bottom Sheet</string>
+    <string name="navigation_views">Navigation Views</string>
+    <string name="bottom_sheets">Bottom Sheets</string>
+    <string name="modal_bottom_sheets">Modal Bottom Sheets</string>
+    <string name="collapsing_toolbars">Collapsing Toolbars</string>
+    <string name="snackbars">Snackbars</string>
+    <string name="material_design">Material Design</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_app_bars">Top App Bars</string>
+    <string name="tab_layout">Tab Layout</string>
+    <string name="bottom_navigation">Bottom Navigation</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="setting">Setting</string>
+    <string name="text_fields">Text Fields</string>
+    <string name="filledbox">FilledBox</string>
+    <string name="outlinedbox">OutlinedBox</string>
+</resources>

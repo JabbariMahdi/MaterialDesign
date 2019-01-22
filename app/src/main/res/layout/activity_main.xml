@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_pat_1"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:text="Part 1"
+        app:icon="@drawable/ic_filter_1_24dp"
+        app:iconPadding="8dp"
+        android:textAllCaps="false"
+        android:padding="20dp"
+        android:textSize="20sp"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_pat_2"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:text="Part 2"
+        app:icon="@drawable/ic_filter_2_24dp"
+        app:iconPadding="8dp"
+        android:textAllCaps="false"
+        android:padding="20dp"
+        android:textSize="20sp"/>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/btn_pat_3"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:text="Part 3"
+        app:icon="@drawable/ic_filter_3_24dp"
+        app:iconPadding="8dp"
+        android:textAllCaps="false"
+        android:padding="20dp"
+        android:textSize="20sp"/>
+
+</LinearLayout>

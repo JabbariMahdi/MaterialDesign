@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="bottom|center_horizontal"
+            app:expandedTitleMarginStart="30dp"
+            app:expandedTitleMarginTop="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:collapsedTitleTextAppearance="@style/AppTheme.PopupOverlay"
+            app:expandedTitleTextAppearance="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/android_material"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:titleTextColor="@android:color/white" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="30dp"
+        android:paddingBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/navigation_views"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:src="@drawable/navigation_views"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/bottom_sheets"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:src="@drawable/bottom_sheets"
+                android:padding="10dp"/>
+
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/material_icon_button"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/open_bottom_sheet"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/modal_bottom_sheets"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/modal_bottom_sheets"
+                android:padding="10dp"/>
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/material_textbotton_button_dialog"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/open_modal_bottom_sheet"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/modal_bottom_sheets"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/modal_bottom_sheets"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/collapsing_toolbars"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/collapsing_toolbar"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/snackbars"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/snackbar"
+                android:padding="10dp"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@android:drawable/ic_dialog_email"
+        app:layout_anchor="@+id/bottom_sheet"
+        app:layout_anchorGravity="top|end"/>
+
+    <!-- include bottom sheet -->
+    <include layout="@layout/bottom_sheet" />
+
+</android.support.design.widget.CoordinatorLayout>
