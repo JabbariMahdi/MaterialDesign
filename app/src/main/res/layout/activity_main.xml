@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <android.support.design.button.MaterialButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_pat_1"
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:padding="20dp"
         android:textSize="20sp"/>
 
-    <android.support.design.button.MaterialButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_pat_2"
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:padding="20dp"
         android:textSize="20sp"/>
 
-    <android.support.design.button.MaterialButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_pat_3"
         style="@style/Widget.MaterialComponents.Button.Icon"
         android:layout_width="match_parent"

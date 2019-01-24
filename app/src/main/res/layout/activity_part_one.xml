@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.widget.NestedScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
@@ -52,7 +53,7 @@
                 android:src="@drawable/material_button"
                 android:padding="10dp"/>
 
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -60,7 +61,7 @@
                 android:text="@string/elevated_button"
                 android:textAllCaps="false"/>
 
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,7 +69,7 @@
                 android:text="@string/unelevated_button"
                 android:textAllCaps="false"/>
 
-            <android.support.design.button.MaterialButton
+            <com.google.android.material.button.MaterialButton
                 style="@style/Widget.MaterialComponents.Button.TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -76,8 +77,8 @@
                 android:layout_margin="10dp"
                 android:textAllCaps="false"/>
 
-            <android.support.design.button.MaterialButton
-                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/text_icon_button"
@@ -102,7 +103,7 @@
                 android:src="@drawable/chips"
                 android:padding="10dp"/>
 
-            <android.support.design.chip.Chip
+            <com.google.android.material.chip.Chip
                 android:id="@+id/entryChip"
                 style="@style/Widget.MaterialComponents.Chip.Entry"
                 android:layout_width="wrap_content"
@@ -112,21 +113,21 @@
                 android:layout_margin="10dp"/>
 
 
-            <android.support.design.chip.Chip
+            <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Filter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Filter"
                 android:layout_margin="10dp"/>
 
-            <android.support.design.chip.Chip
+            <com.google.android.material.chip.Chip
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Choice"
                 android:layout_margin="10dp"/>
 
-            <android.support.design.chip.Chip
+            <com.google.android.material.chip.Chip
                 android:id="@+id/actionChip"
                 style="@style/Widget.MaterialComponents.Chip.Action"
                 android:layout_width="wrap_content"
@@ -139,6 +140,67 @@
                 app:chipStrokeWidth="2dp"
                 app:chipIconTint="@color/colorPrimary"
                 app:rippleColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/checkboxes"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:useMaterialThemeColors="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/switches"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                app:useMaterialThemeColors="false"
+                android:text="@string/switch_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/radio_buttons"
+                android:textSize="24sp"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="10dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkedButton="@+id/first"
+                android:orientation="vertical"
+                app:useMaterialThemeColors="false">
+                <RadioButton
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_label"/>
+                <RadioButton
+                    android:id="@+id/second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_label"/>
+            </RadioGroup>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,7 +228,7 @@
                 android:textColor="@android:color/black"
                 android:layout_marginTop="10dp"/>
 
-            <android.support.design.card.MaterialCardView
+            <com.google.android.material.card.MaterialCardView
                 style="@style/Widget.MaterialComponents.CardView"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -179,14 +241,14 @@
 
                 <include layout="@layout/material_card_view" />
 
-            </android.support.design.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
 
         </LinearLayout>
 
-    </android.support.v4.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
 
-    <android.support.design.bottomappbar.BottomAppBar
+    <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -194,14 +256,19 @@
         app:navigationIcon="@drawable/ic_menu_24dp"
         android:backgroundTint="@color/BottomAppBarBackground"
         style="@style/Widget.MaterialComponents.BottomAppBar"
-        app:hideOnScroll="true"/>
+        app:hideOnScroll="true"
+        app:fabAlignmentMode="center"
+        app:fabCradleRoundedCornerRadius="4dp"
+        app:fabCradleMargin="4dp"
+        app:fabCradleVerticalOffset="0dp"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_anchor="@id/bar"
         style="@style/Widget.MaterialComponents.FloatingActionButton"
-        app:srcCompat="@drawable/ic_add_24dp"/>
+        app:srcCompat="@drawable/ic_add_24dp"
+        tools:ignore="VectorDrawableCompat" />
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

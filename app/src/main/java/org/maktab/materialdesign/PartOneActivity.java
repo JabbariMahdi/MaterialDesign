@@ -1,8 +1,8 @@
 package org.maktab.materialdesign;
 
-import android.support.design.bottomappbar.BottomAppBar;
-import android.support.design.chip.Chip;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.chip.Chip;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;

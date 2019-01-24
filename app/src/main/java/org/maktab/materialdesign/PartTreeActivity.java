@@ -1,19 +1,21 @@
 package org.maktab.materialdesign;
 
-import android.support.annotation.NonNull;
-import android.support.design.button.MaterialButton;
-import android.support.design.widget.BottomSheetBehavior;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.GravityCompat;
+import androidx.annotation.NonNull;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.core.view.GravityCompat;
 
-import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.core.widget.NestedScrollView;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
+
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,8 +28,8 @@ public class PartTreeActivity extends AppCompatActivity
     private DrawerLayout drawer;
     private NavigationView navigationView;
     private LinearLayout layoutBottomSheet;
-    private MaterialButton materialButton;
-    private MaterialButton materialButtonTextDialog;
+    private MaterialButton bottomSheetButton;
+    private MaterialButton modalBottomSheetButton;
     private BottomSheetBehavior bottomSheetBehavior;
     private NestedScrollView nestedScrollView;
     private FloatingActionButton fab;
@@ -37,13 +39,11 @@ public class PartTreeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_part_tree);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         navigationView = findViewById(R.id.nav_view);
         fab =  findViewById(R.id.fab);
         nestedScrollView = findViewById(R.id.nestedScrool);
-
 
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -70,13 +70,13 @@ public class PartTreeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        materialButton=findViewById(R.id.material_icon_button);
-        materialButtonTextDialog=findViewById(R.id.material_textbotton_button_dialog);
+        bottomSheetButton =findViewById(R.id.material_icon_button);
+        modalBottomSheetButton =findViewById(R.id.material_textbotton_button_dialog);
 
         layoutBottomSheet=findViewById(R.id.bottom_sheet);
         bottomSheetBehavior=BottomSheetBehavior.from(layoutBottomSheet);
 
-        materialButton.setOnClickListener(new View.OnClickListener() {
+        bottomSheetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 bottomSheetBehavior.setPeekHeight(500);
@@ -85,7 +85,7 @@ public class PartTreeActivity extends AppCompatActivity
         });
 
 
-        materialButtonTextDialog.setOnClickListener(new View.OnClickListener() {
+        modalBottomSheetButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ModalBottomSheetsFragment modalBottomSheetsFragment = ModalBottomSheetsFragment.newInstance();

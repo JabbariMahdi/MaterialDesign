@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+        <item name="checkboxStyle">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
     </style>
 
     <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
@@ -18,6 +19,12 @@
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="AppThemeOverlayLight"/>
+
+    <style name="floating" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="tint">@color/colorAccent</item>
+    </style>
+
+
 
 
 </resources>

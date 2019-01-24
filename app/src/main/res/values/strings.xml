@@ -38,4 +38,10 @@
     <string name="text_fields">Text Fields</string>
     <string name="filledbox">FilledBox</string>
     <string name="outlinedbox">OutlinedBox</string>
+    <string name="checkboxes">Checkboxes</string>
+    <string name="switches">Switches</string>
+    <string name="switch_text">switch text</string>
+    <string name="radio_buttons">Radio Buttons</string>
+    <string name="first_label">first label</string>
+    <string name="second_label">second label</string>
 </resources>
